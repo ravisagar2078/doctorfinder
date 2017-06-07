@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:singleLine="true"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#f9f2f2" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:singleLine="true"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="Password"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/etUserName"
+        android:layout_alignStart="@+id/etUserName"
+        android:background="#f9f2f2" />
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:padding="3dp"
+        android:text="Login"
+        android:onClick="onlogin"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:background="#f9f2f2"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Forgot Password?"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:layout_below="@+id/btnlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:clickable="true"
+        android:contextClickable="false" />
+
+
+</RelativeLayout>

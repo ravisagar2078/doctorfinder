@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#1b58ff"
+        android:layout_below="@+id/et_city"
+
+        android:layout_marginTop="90dp" />
+
+    <EditText
+        android:id="@+id/et_ftiming"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="Timing From (IN 24 Format )"
+        android:layout_below="@+id/spinner"
+
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        />
+    <EditText
+        android:id="@+id/et_ttiming"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/et_ftiming"
+
+        android:hint="Timing To (IN 24 Format)"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        />
+    <Button
+        android:id="@+id/btn_up"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:padding="3dp"
+        android:text="Sign Up"
+        android:onClick="register"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_below="@+id/et_ttiming"
+        android:layout_centerHorizontal="true"
+       />
+    <EditText
+        android:id="@+id/et_city"
+        android:layout_marginTop="45dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="City Name"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        />
+
+
+
+</RelativeLayout>
